@@ -1,0 +1,7 @@
+The crow is at {{position}} case.
+<div class='cases'>
+    <div *ngFor='let i of cases;' class='case' [style.backgroundColor]='couleurCase(i)'>
+        <img *ngIf='crowPosition==i' class='crow' src='assets/crow.png' />
+    </div>
+</div>, styles: [ '.crow {witdh:8em; height: 8em;}', .case { position:relative; width:3em; height: 3em; border: 1px solid black;}', '.cases {display: flex; flex-flow: row nowrap; height:10em; background-size:cover; background-position: 50% 60%; background-image:url(assets/landscape.jpg);}'
+]
